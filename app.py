@@ -8,7 +8,7 @@ from keras_vggface.vggface import VGGFace
 import numpy as np
 import pickle
 from sklearn.metrics.pairwise import cosine_similarity
-import cv2
+from cv2 import cv2
 
 model = VGGFace(model='resnet50', include_top = False, input_shape=(224,224,3), pooling = 'avg')
 
