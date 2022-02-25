@@ -4,4 +4,4 @@ numpy
 scikit-learn
 mtcnn
 keras_vggface
-keras_applications
+keras
