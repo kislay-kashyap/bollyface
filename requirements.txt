@@ -4,4 +4,3 @@ numpy
 scikit-learn
 mtcnn
 opencv-python-headless
-libgl1-mesa-glx
