@@ -4,3 +4,4 @@ numpy
 scikit-learn
 mtcnn
 python3-opencv
+keras_vggface
