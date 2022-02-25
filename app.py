@@ -65,14 +65,14 @@ if uploaded_image is not None:
         try:
             features = extract_features(os.path.join('uploads', uploaded_image.name), model, detector)
             index_list = recommend(feature_list, features)
-            predicted_actor = " ".join(filenames[index_list[0][0]].split('\\')[1].split('_'))
+            predicted_actor = " ".join(filenames[index_list[0][0]].split('/')[1].split('_'))
             
             st.header('Your uploaded image')
             st.image(display_image)
 
             st.title("The Full List")
             for i in range(0,5):
-                st.write(" ".join(filenames[index_list[i][0]].split('\\')[1].split('_')) + " ==> "+str(int(index_list[i][1]*100)) + "%")
+                st.write(" ".join(filenames[index_list[i][0]].split('/')[1].split('_')) + " ==> "+str(int(index_list[i][1]*100)) + "%")
                 st.image(filenames[index_list[i][0]], width=200)
 
         except:
