@@ -1,7 +1,7 @@
 import streamlit as st
 from PIL import Image
 import os
-from mtcnn import MTCNN
+from mtcnn.mtcnn import MTCNN
 from tensorflow.keras.preprocessing import image
 from keras_vggface.utils import preprocess_input
 from keras_vggface.vggface import VGGFace
