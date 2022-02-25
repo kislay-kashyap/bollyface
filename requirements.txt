@@ -3,4 +3,4 @@ tensorflow-cpu
 numpy
 scikit-learn
 mtcnn
-opencv-python
+opencv-python-headless
